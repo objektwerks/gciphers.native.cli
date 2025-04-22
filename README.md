@@ -51,6 +51,10 @@ Publish
 2. ```mv target/scala-3.7.0-RC3/todo-native-cli target/scala-3.7.0-RC3/todo```
 3. ```sudo cp target/scala-3.7.0-RC3/todo /usr/local/bin```
 
+Commands
+--------
+1. TODO
+
 Execute
 -------
 1. TODO
