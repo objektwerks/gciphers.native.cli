@@ -16,7 +16,7 @@ object App:
   @main
   def t( @arg text: String ): Unit =
     val encodings = Encodings.encode(text)
-    println(encodings) // Iterate and print.
+    println(encodings) // Iterate and print encoding.
 
   @main
   def n( @arg int: Int ): Unit =
