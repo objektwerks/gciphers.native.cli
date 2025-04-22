@@ -43,7 +43,7 @@ object App:
 
   private def commands(): Unit =
     println("Commands:")
-    println("1. t - text")
-    println("2. n - number")
-    println("3. d - date")
-    println("4. nt - number to texts")
+    println("1. t --text")
+    println("2. n --number")
+    println("3. d --date")
+    println("4. nt --number")
