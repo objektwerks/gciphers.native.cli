@@ -9,6 +9,9 @@ object App:
   def help(): Unit =
     commands()
 
+  @main
+  def w( @arg word: String ): Unit = ???
+
   def main(args: Array[String]): Unit =
     if args.isEmpty then commands()
     else ParserForMethods(this).runOrExit(args)
