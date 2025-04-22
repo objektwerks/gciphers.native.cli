@@ -16,3 +16,4 @@ object App:
   private def commands(): Unit =
     println("Commands:")
     println("1. w")
+    println("2. n")
