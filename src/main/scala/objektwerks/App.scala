@@ -23,9 +23,9 @@ object App:
     val number = Number(int, primes, fibonaccis)
     println(number) // print number stats.
 
-  @main // "2025-01-01"
+  @main 
   def d( @arg date: String ): Unit =
-    val localDate = LocalDate.parse(date)
+    val localDate = LocalDate.parse(date) // "2025-01-01"
     println(localDate) // print data stats.
 
   @main
