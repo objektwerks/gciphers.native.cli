@@ -29,7 +29,13 @@ object App:
     println(localDate) // print data stats.
 
   @main
-  def nt( @arg number: Int ): Unit = ???
+  def nt( @arg number: Int ): Unit =
+    val texts = store
+      .listTexts()
+      .find(texts => texts.number == number) match
+        case Some(texts) => texts
+        case None => Texts.empty
+    println(texts) // print texts.
 
   def main(args: Array[String]): Unit =
     if args.isEmpty then commands()
