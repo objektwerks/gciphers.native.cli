@@ -1,6 +1,6 @@
 enablePlugins(ScalaNativePlugin)
 
-"name := "gciphers.native.cli"
+name := "gciphers.native.cli"
 organization := "objektwerks"
 version := "1.0.0"
 scalaVersion := �3.7.0-RC3�
