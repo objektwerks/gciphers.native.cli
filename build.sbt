@@ -6,6 +6,7 @@ version := "1.0.0"
 scalaVersion := �3.7.0-RC3�
 libraryDependencies ++= {
   Seq(
+    "com.lihaoyi" %%% "mainargs" % "0.7.6",
     "com.lihaoyi" %% "os-lib" % "0.11.5-M5",
     "com.softwaremill.ox" %% "core" % "0.5.13",
     "com.lihaoyi" %% "upickle" % "4.1.0",
