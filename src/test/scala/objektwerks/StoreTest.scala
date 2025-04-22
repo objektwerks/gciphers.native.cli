@@ -10,5 +10,5 @@ class StoreTest extends AnyFunSuite with Matchers:
     val store = Store()
     val texts = Texts(1, mutable.Set("a"))
     store.writeTexts(texts)
-    store.readTexts(texts.fileProperty.value) shouldBe texts
+    store.readTexts(texts.fileProperty) shouldBe texts
     store.listTexts().length should be >= 1
