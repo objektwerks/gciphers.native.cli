@@ -10,7 +10,6 @@ libraryDependencies ++= {
   Seq(
     "com.lihaoyi" %%% "mainargs" % "0.7.6",
     "com.lihaoyi" %%% "os-lib" % "0.11.4",
-    "com.softwaremill.ox" %%% "core" % "0.5.13",
     "com.lihaoyi" %%% "upickle" % "4.1.0",
     "org.ekrich" %%% "sjavatime" % "1.3.0",
     "com.outr" %%% "scribe" % "3.16.1",
