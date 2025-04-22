@@ -15,7 +15,4 @@ object App:
 
   private def commands(): Unit =
     println("Commands:")
-    println("1. list --filter all | completed | incomplete")
-    println("2. add --todo")
-    println("3. complete --id")
-    println("4. help")
+    println("1. w")
