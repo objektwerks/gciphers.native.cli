@@ -59,29 +59,6 @@ Execute
 >or:
 1. ```java -jar .assembly/gciphers-3.3.0.jar```
 
-Deploy
-------
-1. edit build.sbt ( jarVersion + version )
-2. edit app.conf ( about > alert > contentText )
-3. edit package.json ( version + jdeploy / jar )
-4. edit readme
-5. sbt clean test assembly copyAssemblyJar
-6. perform github release ( from https://github.com/objektwerks/gciphers )
-7. npm login
-8. jdeploy publish ( to https://www.jdeploy.com/~gciphers )
-9. check email for npm message
->See [jDeploy Docs](https://www.jdeploy.com/docs/manual/#_getting_started) for details.
-
-jDeploy Install
----------------
-1. Setup npm account at npmjs.com
-2. Install node, which installs npm, which bundles npx.
-3. Install jdeploy via npm - *npm install -g jdeploy*
-4. Add icon.png ( 256x256 or 512x512 ) to project root and resources.
-5. Edit jDeploy *package.json* as required.
-6. Add *jdeploy* and *jdeploy-bundle* to .gitignore
->See [jDeploy Docs](https://www.jdeploy.com/docs/manual/#_getting_started) for details.
-
 NPM Versioning
 --------------
 >The ```build.sbt``` **must** contain a ```semver 3-digit``` **version** number. See: [Npmjs Semver](https://docs.npmjs.com/about-semantic-versioning)
