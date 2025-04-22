@@ -64,6 +64,20 @@ Execute
 -------
 1. TODO
 
+Persistence
+-----------
+>**Data**, as json files, is stored here:
+```
+~/.gciphers/store
+```
+
+Logging
+-------
+>**Log** files are stored here:
+```
+~/.gciphers/log
+```
+
 License
 -------
 >Copyright (c) [2025] [Objektwerks]
