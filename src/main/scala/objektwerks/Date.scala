@@ -53,7 +53,7 @@ object Date:
     val encoding = months.map(s => s.toInt).sum + days.map(s => s.toInt).sum + years.map(s => s.toInt).sum
     (expression, encoding)
 
-  def toExpression(strings: Array[String]): String =
+  private def toExpression(strings: Array[String]): String =
     if strings.length == 2 then s"${strings(0)} + ${strings(1)}"
     else if strings.length == 1 then s"${strings(0)}"
     else "0"
