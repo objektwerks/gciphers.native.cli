@@ -47,4 +47,4 @@ object App:
     println("t --text")
     println("n --number")
     println("d --date")
-    println("nt --numbertexts")
+    println("nt --number")
