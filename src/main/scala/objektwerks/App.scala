@@ -19,14 +19,14 @@ object App:
     println(encodings) // Iterate and print encoding.
 
   @main
-  def n( @arg int: Int ): Unit =
-    val number = Number(int, primes, fibonaccis)
-    println(number) // print number stats.
+  def n( @arg number: Int ): Unit =
+    val stats = Number(number, primes, fibonaccis)
+    println(stats) // print number stats.
 
   @main 
   def d( @arg date: String ): Unit =
-    val localDate = LocalDate.parse(date) // "2025-01-01"
-    println(localDate) // print data stats.
+    val stats = LocalDate.parse(date) // "2025-01-01"
+    println(stats) // print data stats.
 
   @main
   def nt( @arg number: Int ): Unit =
