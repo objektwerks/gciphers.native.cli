@@ -1,7 +1,7 @@
 name := "gciphers.native.cli
 organization := "objektwerks"
-version := "3.3.0"
-scalaVersion := Ò3.7.0-RC3Ó
+version := "1.0.0"
+scalaVersion := ï¿½3.7.0-RC3ï¿½
 libraryDependencies ++= {
   Seq(
     "com.lihaoyi" %% "os-lib" % "0.11.5-M5",
