@@ -45,13 +45,11 @@ Test
 ----
 1. ```sbt clean test```
 
-Run
----
-1. ```sbt run```
-
-Assembly
---------
-1. ```sbt clean test assembly copyAssemblyJar```
+Publish
+-------
+1. ```sbt clean compile nativeLink```
+2. ```mv target/scala-3.7.0-RC3/todo-native-cli target/scala-3.7.0-RC3/todo```
+3. ```sudo cp target/scala-3.7.0-RC3/todo /usr/local/bin```
 
 Execute
 -------
@@ -61,7 +59,7 @@ Execute
 
 License
 -------
->Copyright (c) [2023, 2024, 2025] [Objektwerks]
+>Copyright (c) [2025] [Objektwerks]
 
 >Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
