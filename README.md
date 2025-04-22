@@ -75,7 +75,7 @@ Execute
 
 Persistence
 -----------
->**Data**, as json files, is stored here:
+>**Texts ( number 1 -> * texts )**, as json files, is stored here:
 ```
 ~/.gciphers/store
 ```
