@@ -18,6 +18,9 @@ object App:
   @main
   def d( @arg date: String ): Unit = ???
 
+  @main
+  def nmapw( @arg number: Int ): Unit = ???
+
   def main(args: Array[String]): Unit =
     if args.isEmpty then commands()
     else ParserForMethods(this).runOrExit(args)
