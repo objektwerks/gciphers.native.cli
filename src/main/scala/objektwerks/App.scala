@@ -3,6 +3,8 @@ package objektwerks
 import mainargs.{main, arg, ParserForMethods}
 
 object App:
+  val primes = Numbers.listPrimes(0 to 1000)
+  val fibonaccis = Numbers.listFibonaccis(0 to 15)
   val store = Store()
 
   @main
