@@ -17,3 +17,4 @@ object App:
     println("Commands:")
     println("1. w")
     println("2. n")
+    println("3. d")
