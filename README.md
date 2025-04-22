@@ -37,6 +37,11 @@ Features
 5. **Enter:** Text and number data entry.
 6. **Clear:** Clears all data entry and analysis.
 
+Install
+-------
+>See: http://www.scala-native.org/en/latest/user/setup.html
+1. brew install llvm
+
 Build
 -----
 1. ```sbt clean compile```
@@ -48,7 +53,7 @@ Test
 Publish
 -------
 1. ```sbt clean compile nativeLink```
-2. ```mv target/scala-3.7.0-RC3/todo-native-cli target/scala-3.7.0-RC3/todo```
+2. ```mv target/scala-3.7.0-RC3/todo-native-cli target/scala-3.7.0-RC3/gciphers```
 3. ```sudo cp target/scala-3.7.0-RC3/todo /usr/local/bin```
 
 Commands
