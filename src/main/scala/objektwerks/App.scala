@@ -19,7 +19,7 @@ object App:
   def d( @arg date: String ): Unit = ???
 
   @main
-  def nmapw( @arg number: Int ): Unit = ???
+  def nw( @arg number: Int ): Unit = ???
 
   def main(args: Array[String]): Unit =
     if args.isEmpty then commands()
@@ -30,4 +30,4 @@ object App:
     println("1. w")
     println("2. n")
     println("3. d")
-    println("4. nmapw")
+    println("4. nw")
