@@ -19,4 +19,4 @@ final class Store:
 
   def writeTexts(texts: Texts): Unit =
     val cipherTextsAsJson = writeJson(texts)
-    os.write.over(storePath / texts.fileProperty.value, cipherTextsAsJson)
+    os.write.over(storePath / texts.fileProperty, cipherTextsAsJson)

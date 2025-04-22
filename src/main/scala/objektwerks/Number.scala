@@ -1,7 +1,5 @@
 package objektwerks
 
-import scalafx.beans.property.ObjectProperty
-
 import Numbers.*
 
 object Number:
@@ -21,10 +19,4 @@ final case class Number(number: Int,
                         fibonacciRank: Int,
                         isStar: Boolean,
                         isTriangular: Boolean,
-                        factors: List[Int]) derives CanEqual:
-  val numberProperty = ObjectProperty[Int](this, "number", number)
-  val primeRankProperty = ObjectProperty[Int](this, "primerank", primeRank)
-  val fibbonaciRankProperty = ObjectProperty[Int](this, "fibonaccirank", fibonacciRank)
-  val isStarProperty = ObjectProperty[Boolean](this, "isstar", isStar)
-  val isTriangularProperty = ObjectProperty[Boolean](this, "istriangular", isTriangular)
-  val factorsProperty = ObjectProperty[String](this, "fators", factors.mkString(", "))
+                        factors: List[Int]) derives CanEqual
