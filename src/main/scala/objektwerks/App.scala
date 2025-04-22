@@ -10,7 +10,7 @@ object App:
     commands()
 
   @main
-  def w( @arg word: String ): Unit = ???
+  def t( @arg text: String ): Unit = ???
 
   @main
   def n( @arg number: Int ): Unit = ???
@@ -19,7 +19,7 @@ object App:
   def d( @arg date: String ): Unit = ???
 
   @main
-  def nw( @arg number: Int ): Unit = ???
+  def nt( @arg number: Int ): Unit = ???
 
   def main(args: Array[String]): Unit =
     if args.isEmpty then commands()
@@ -27,7 +27,7 @@ object App:
 
   private def commands(): Unit =
     println("Commands:")
-    println("1. w - word")
+    println("1. t - text")
     println("2. n - number")
     println("3. d - date")
-    println("4. nw - number to words")
+    println("4. nt - number to texts")
