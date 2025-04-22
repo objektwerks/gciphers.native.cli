@@ -53,8 +53,8 @@ Test
 Publish
 -------
 1. ```sbt clean compile nativeLink```
-2. ```mv target/scala-3.7.0-RC3/gciphers-native-cli target/scala-3.7.0-RC3/gciphers```
-3. ```sudo cp target/scala-3.7.0-RC3/gciphers /usr/local/bin```
+2. ```mv target/scala-3.7.0-RC3/gciphers-native-cli target/scala-3.7.0-RC3/cipher```
+3. ```sudo cp target/scala-3.7.0-RC3/cipher /usr/local/bin```
 
 Commands
 --------
