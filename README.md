@@ -63,7 +63,7 @@ Commands
 1. t --text test
 2. n --number 1
 3. d --date 2025-01-01
-4. nt --numbertexts 1
+4. nt --number 1
 
 Execute
 -------
