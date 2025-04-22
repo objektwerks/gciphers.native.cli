@@ -23,7 +23,7 @@ object App:
     val number = Number(int, primes, fibonaccis)
     println(number) // print number stats.
 
-  @main
+  @main // "2025-01-01"
   def d( @arg date: String ): Unit =
     val localDate = LocalDate.parse(date)
     println(localDate) // print data stats.
