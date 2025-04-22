@@ -1,3 +1,4 @@
 package objektwerks
 
-object App
+object App:
+  val store = Store()
