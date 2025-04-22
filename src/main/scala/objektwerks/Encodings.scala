@@ -1,7 +1,5 @@
 package objektwerks
 
-import scalafx.beans.property.ObjectProperty
-
 import Ciphers.*
 
 object Encodings:
@@ -56,29 +54,4 @@ final case class Encodings(text: String,
                            chaldean: Chaldean,
                            septenary: Septenary,
                            satanic: Satanic,
-                           reverseSatanic: ReverseSatanic) derives CanEqual:
-  val textProperty = ObjectProperty(text)
-  val ordinalProperty = ObjectProperty(ordinal.value)
-  val reverseOrdinalProperty = ObjectProperty(reverseOrdinal.value)
-  val reductionProperty = ObjectProperty(reduction.value)
-  val reverseReductionProperty = ObjectProperty(reverseReduction.value)
-  val standardProperty = ObjectProperty(standard.value)
-  val reverseStandardProperty = ObjectProperty(reverseStandard.value)
-  val latinProperty = ObjectProperty(latin.value)
-  val sumerianProperty = ObjectProperty(sumerian.value)
-  val reverseSumerianProperty = ObjectProperty(reverseSumerian.value)
-  val primesProperty = ObjectProperty(primes.value)
-  val reversePrimesProperty = ObjectProperty(reversePrimes.value)
-  val fibonacciProperty = ObjectProperty(fibonacci.value)
-  val squaresProperty = ObjectProperty(squares.value)
-  val reverseSquaresProperty = ObjectProperty(reverseSquares.value)
-  val trigonalProperty = ObjectProperty(trigonal.value)
-  val reverseTrigonalProperty = ObjectProperty(reverseTrigonal.value)
-  val singleReductionProperty = ObjectProperty(singleReduction.value)
-  val reverseSingleReductionProperty = ObjectProperty(reverseSingleReduction.value)
-  val keypadProperty = ObjectProperty(keypad.value)
-  val chaldeanProperty = ObjectProperty(chaldean.value)
-  val septenaryProperty = ObjectProperty(septenary.value)
-  val satanicProperty = ObjectProperty(satanic.value)
-  val reverseSatanicProperty = ObjectProperty(reverseSatanic.value)
-  val encodings = this
+                           reverseSatanic: ReverseSatanic) derives CanEqual
