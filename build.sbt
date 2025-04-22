@@ -1,3 +1,5 @@
+import scalanative.build.Mode
+
 enablePlugins(ScalaNativePlugin)
 
 name := "gciphers.native.cli"
