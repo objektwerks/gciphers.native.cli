@@ -15,6 +15,9 @@ object App:
   @main
   def n( @arg number: Int ): Unit = ???
 
+  @main
+  def d( @arg date: String ): Unit = ???
+
   def main(args: Array[String]): Unit =
     if args.isEmpty then commands()
     else ParserForMethods(this).runOrExit(args)
