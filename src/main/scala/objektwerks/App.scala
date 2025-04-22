@@ -27,7 +27,7 @@ object App:
 
   private def commands(): Unit =
     println("Commands:")
-    println("1. w")
-    println("2. n")
-    println("3. d")
-    println("4. nw")
+    println("1. w - word")
+    println("2. n - number")
+    println("3. d - date")
+    println("4. nw - number to words")
