@@ -10,7 +10,7 @@ object App:
   val store = Store()
 
   @main
-  def help(): Unit =
+  def h(): Unit =
     commands()
 
   @main
@@ -43,7 +43,8 @@ object App:
 
   private def commands(): Unit =
     println("Commands:")
-    println("1. t --text")
-    println("2. n --number")
-    println("3. d --date")
-    println("4. nt --number")
+    println("h")
+    println("t --text")
+    println("n --number")
+    println("d --date")
+    println("nt --number")
