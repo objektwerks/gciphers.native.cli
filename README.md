@@ -71,7 +71,7 @@ Execute
 1. gciphers t --text test
 2. gciphers n --number 1
 3. gciphers d --date 2025-01-01
-4. gciphers nt --numbertexts 1
+4. gciphers nt --number 1
 
 Persistence
 -----------
