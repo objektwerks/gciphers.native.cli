@@ -10,7 +10,9 @@ object App:
     commands()
 
   @main
-  def t( @arg text: String ): Unit = ???
+  def t( @arg text: String ): Unit =
+    val encodings = Encodings.encode(text)
+    println(encodings) // Iterate and print.
 
   @main
   def n( @arg number: Int ): Unit = ???
