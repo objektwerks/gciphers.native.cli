@@ -17,7 +17,9 @@ object App:
     println(encodings) // Iterate and print.
 
   @main
-  def n( @arg number: Int ): Unit = ???
+  def n( @arg int: Int ): Unit =
+    val number = Number(int, primes, fibonaccis)
+    println(number) // print.
 
   @main
   def d( @arg date: String ): Unit = ???
