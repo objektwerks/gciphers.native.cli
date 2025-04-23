@@ -21,7 +21,7 @@ object App:
   @main
   def s( @arg t: String ): Unit =
     val encodings = Encodings.encode(t)
-    println(encodings) // Iterate encodings and save nunber with text. Existing number-text?
+    println(encodings) // Iterate encodings and save nunber with text. Get existing number-text?
 
   @main
   def n( @arg n: Int ): Unit =
