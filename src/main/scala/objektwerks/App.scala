@@ -28,9 +28,8 @@ object App:
     println(s"reverse sumerian: ${encodings.reverseSumerian}")
     println(s"primes: ${encodings.primes}")
     println(s"reverse primes: ${encodings.reversePrimes}")
+    println(s"fibonacci: ${encodings.fibonacci}")
 
-
-    fibonacci
     squares
     reverseSquares
     trigonal
