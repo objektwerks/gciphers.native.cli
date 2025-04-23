@@ -29,9 +29,9 @@ object App:
     println(s"primes: ${encodings.primes}")
     println(s"reverse primes: ${encodings.reversePrimes}")
     println(s"fibonacci: ${encodings.fibonacci}")
+    println(s"squares: ${encodings.squares}")
+    println(s"reverse squares: ${encodings.reverseSquares}")
 
-    squares
-    reverseSquares
     trigonal
     reverseTrigonal
     singleReduction
