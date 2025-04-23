@@ -31,9 +31,9 @@ object App:
     println(s"fibonacci: ${encodings.fibonacci}")
     println(s"squares: ${encodings.squares}")
     println(s"reverse squares: ${encodings.reverseSquares}")
+    println(s"trigonal: ${encodings.trigonal}")
+    println(s"reverse trigonal: ${encodings.reverseTrigonal}")
 
-    trigonal
-    reverseTrigonal
     singleReduction
     reverseSingleReduction
     keypad
