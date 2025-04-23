@@ -21,9 +21,10 @@ object App:
     println(s"reverse ordinal: ${encodings.reverseOrdinal}")
     println(s"reduction: ${encodings.reduction}")
     println(s"reverse reduction: ${encodings.reverseReduction}")
+    println(s"standard: ${encodings.standard}")
+    println(s"reverse standard: ${encodings.reverseStandard}")
 
-    standard
-    reverseStandard
+
     latin
     sumerian
     reverseSumerian
