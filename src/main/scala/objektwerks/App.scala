@@ -36,8 +36,8 @@ object App:
     println(s"single reduction: ${encodings.singleReduction}")
     println(s"reverse single reduction: ${encodings.reverseSingleReduction}")
     println(s"keypad: ${encodings.keypad}")
+    println(s"chaldean: ${encodings.chaldean}")
 
-    chaldean
     septenary
     satanic
     reverseSatanic
