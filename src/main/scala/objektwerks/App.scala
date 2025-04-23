@@ -58,7 +58,7 @@ object App:
   @main 
   def d( @arg d: String ): Unit =
     val stats = LocalDate.parse(d) // "2025-01-01"
-    println(stats) // TODO: print data stats.
+    println(stats) // TODO: Pxsrint data stats.
 
   @main
   def nt( @arg n: Int ): Unit =
