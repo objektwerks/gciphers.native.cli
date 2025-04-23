@@ -14,8 +14,8 @@ object App:
     commands()
 
   @main
-  def t( @arg t: String ): Unit =
-    val encodings = Encodings.encode(t)
+  def t( @arg text: String ): Unit =
+    val encodings = Encodings.encode(text)
     println(s"text: ${encodings.text}")
     println(s"ordinal: ${encodings.ordinal}")
     println(s"reverse ordinal: ${encodings.reverseOrdinal}")
@@ -42,13 +42,13 @@ object App:
     println(s"reverse satanic: ${encodings.reverseSatanic}")
 
   @main
-  def s( @arg t: String ): Unit =
-    val encodings = Encodings.encode(t)
+  def s( @arg text: String ): Unit =
+    val encodings = Encodings.encode(text)
     println(encodings) // TODO: Iterate encodings and save nunber with text. Get existing number-text?
 
   @main
-  def n( @arg n: Int ): Unit =
-    val stats = Number(n, primes, fibonaccis)
+  def n( @arg number: Int ): Unit =
+    val stats = Number(number, primes, fibonaccis)
     println(s"number: ${stats.number}")
     println(s"prime rank: ${stats.primeRank}")
     println(s"fibonaci rank: ${stats.fibonacciRank}")
@@ -56,15 +56,15 @@ object App:
     println(s"factors: ${stats.factors}")
 
   @main 
-  def d( @arg d: String ): Unit =
-    val stats = LocalDate.parse(d) // "2025-01-01"
+  def d( @arg date: String ): Unit =
+    val stats = LocalDate.parse(date) // "2025-01-01"
     println(stats) // TODO: Pxsrint data stats.
 
   @main
-  def nt( @arg n: Int ): Unit =
+  def nt( @arg number: Int ): Unit =
     val texts = store
       .listTexts()
-      .find(texts => texts.number == n) match
+      .find(texts => texts.number == number) match
         case Some(texts) => texts
         case None => Texts.empty
     println(s"number: ${texts.number}")
