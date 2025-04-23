@@ -33,9 +33,9 @@ object App:
     println(s"reverse squares: ${encodings.reverseSquares}")
     println(s"trigonal: ${encodings.trigonal}")
     println(s"reverse trigonal: ${encodings.reverseTrigonal}")
+    println(s"single reduction: ${encodings.singleReduction}")
+    println(s"reverse single reduction: ${encodings.reverseSingleReduction}")
 
-    singleReduction
-    reverseSingleReduction
     keypad
     chaldean
     septenary
