@@ -38,9 +38,8 @@ object App:
     println(s"keypad: ${encodings.keypad}")
     println(s"chaldean: ${encodings.chaldean}")
     println(s"septenary: ${encodings.septenary}")
-
-    satanic
-    reverseSatanic
+    println(s"satanic: ${encodings.satanic}")
+    println(s"reverse satanic: ${encodings.reverseSatanic}")
 
   @main
   def s( @arg t: String ): Unit =
