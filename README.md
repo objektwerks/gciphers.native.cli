@@ -69,8 +69,8 @@ Commands
 Execute
 -------
 0. gciphers | gciphers h
-1. gciphers t --t test
-2. gciphers s --t test
+1. gciphers t --t text
+2. gciphers s --t text
 3. gciphers n --n 1
 4. gciphers d --d 2025-01-01
 5. gciphers nt --n 1
