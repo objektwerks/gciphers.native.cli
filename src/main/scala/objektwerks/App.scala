@@ -49,7 +49,11 @@ object App:
   @main
   def n( @arg n: Int ): Unit =
     val stats = Number(n, primes, fibonaccis)
-    println(stats) // print number stats.
+    println(s"number: ${stats.number}")
+    println(s"prime rank: ${stats.primeRank}")
+    println(s"fibonaci rank: ${stats.fibonacciRank}")
+    println(s"is triangular: ${stats.isTriangular}")
+    println(s"factors: ${stats.factors}")
 
   @main 
   def d( @arg d: String ): Unit =
