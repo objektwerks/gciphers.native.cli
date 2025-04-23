@@ -70,7 +70,7 @@ Execute
 -------
 0. gciphers | gciphers h
 1. gciphers t --text test
-2. gciphers s --text text
+2. gciphers s --text test
 3. gciphers n --number 1
 4. gciphers d --date 2025-01-01
 5. gciphers nt --number 1
