@@ -77,7 +77,8 @@ object App:
   private def commands(): Unit =
     println("Commands:")
     println("h")
-    println("t --text")
-    println("n --number")
-    println("d --date")
-    println("nt --number")
+    println("t --t test")
+    println("s --s test")
+    println("n --n 1")
+    println("d --d 2025-01-01")
+    println("nt --n 1")
