@@ -23,11 +23,10 @@ object App:
     println(s"reverse reduction: ${encodings.reverseReduction}")
     println(s"standard: ${encodings.standard}")
     println(s"reverse standard: ${encodings.reverseStandard}")
+    println(s"latin: ${encodings.latin}")
+    println(s"sumerian: ${encodings.sumerian}")
+    println(s"reverse sumerian: ${encodings.reverseSumerian}")
 
-
-    latin
-    sumerian
-    reverseSumerian
     primes
     reversePrimes
     fibonacci
