@@ -16,7 +16,31 @@ object App:
   @main
   def t( @arg t: String ): Unit =
     val encodings = Encodings.encode(t)
-    println(encodings) // Iterate and print encoding.
+    println(s"text: ${encodings.text}")
+    println(s"ordinal: ${encodings.ordinal}")
+    println(s"reverse ordinal: ${encodings.reverseOrdinal}")
+    println(s"reduction: ${encodings.reduction}")
+    println(s"reverse reduction: ${encodings.reverseReduction}")
+
+    standard
+    reverseStandard
+    latin
+    sumerian
+    reverseSumerian
+    primes
+    reversePrimes
+    fibonacci
+    squares
+    reverseSquares
+    trigonal
+    reverseTrigonal
+    singleReduction
+    reverseSingleReduction
+    keypad
+    chaldean
+    septenary
+    satanic
+    reverseSatanic
 
   @main
   def s( @arg t: String ): Unit =
