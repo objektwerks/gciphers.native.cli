@@ -61,9 +61,10 @@ Commands
 >Help is printed with command 0 or an empty command.
 0. h
 1. t --text test
-2. n --number 1
-3. d --date 2025-01-01
-4. nt --number 1
+2. s --save text
+3. n --number 1
+4. d --date 2025-01-01
+5. nt --number 1
 
 Execute
 -------
