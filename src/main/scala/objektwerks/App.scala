@@ -19,6 +19,11 @@ object App:
     println(encodings) // Iterate and print encoding.
 
   @main
+  def s( @arg text: String ): Unit =
+    val encodings = Encodings.encode(text)
+    println(encodings) // Iterate ecodings and save number to text.
+
+  @main
   def n( @arg number: Int ): Unit =
     val stats = Number(number, primes, fibonaccis)
     println(stats) // print number stats.
