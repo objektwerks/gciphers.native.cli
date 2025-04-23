@@ -67,7 +67,8 @@ object App:
       .find(texts => texts.number == n) match
         case Some(texts) => texts
         case None => Texts.empty
-    println(texts) // print texts.
+    println(s"number: ${texts.number}")
+    println(s"texts: ${texts.values}")
 
   def main(args: Array[String]): Unit =
     if args.isEmpty then commands()
