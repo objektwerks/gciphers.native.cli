@@ -68,7 +68,7 @@ object App:
         case Some(texts) => texts
         case None => Texts.empty
     println(s"number: ${texts.number}")
-    println(s"texts: ${texts.values}")
+    println(s"texts: ${texts.values.mkString(",")}")
 
   def main(args: Array[String]): Unit =
     if args.isEmpty then commands()
