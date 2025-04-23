@@ -61,7 +61,7 @@ Commands
 >Help is printed with command 0 or an empty command.
 0. h
 1. t --text test
-2. s --save text
+2. s --save test
 3. n --number 1
 4. d --date 2025-01-01
 5. nt --number 1
