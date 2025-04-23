@@ -21,7 +21,7 @@ object App:
   @main
   def s( @arg t: String ): Unit =
     val encodings = Encodings.encode(t)
-    println(encodings) // Iterate ecodings and save number to text.
+    println(encodings) // Iterate ecodings and save encoding number with text. Existing number-text?
 
   @main
   def n( @arg n: Int ): Unit =
