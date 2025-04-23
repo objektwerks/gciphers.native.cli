@@ -26,9 +26,10 @@ object App:
     println(s"latin: ${encodings.latin}")
     println(s"sumerian: ${encodings.sumerian}")
     println(s"reverse sumerian: ${encodings.reverseSumerian}")
+    println(s"primes: ${encodings.primes}")
+    println(s"reverse primes: ${encodings.reversePrimes}")
 
-    primes
-    reversePrimes
+
     fibonacci
     squares
     reverseSquares
