@@ -44,7 +44,7 @@ object App:
   @main
   def s( @arg t: String ): Unit =
     val encodings = Encodings.encode(t)
-    println(encodings) // Iterate encodings and save nunber with text. Get existing number-text?
+    println(encodings) // TODO: Iterate encodings and save nunber with text. Get existing number-text?
 
   @main
   def n( @arg n: Int ): Unit =
@@ -58,7 +58,7 @@ object App:
   @main 
   def d( @arg d: String ): Unit =
     val stats = LocalDate.parse(d) // "2025-01-01"
-    println(stats) // print data stats.
+    println(stats) // TODO: print data stats.
 
   @main
   def nt( @arg n: Int ): Unit =
