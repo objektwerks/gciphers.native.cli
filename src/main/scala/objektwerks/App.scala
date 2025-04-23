@@ -53,7 +53,7 @@ object App:
     println(s"prime rank: ${stats.primeRank}")
     println(s"fibonaci rank: ${stats.fibonacciRank}")
     println(s"is triangular: ${stats.isTriangular}")
-    println(s"factors: ${stats.factors}")
+    println(s"factors: ${stats.factors.mkString(",")}")
 
   @main 
   def d( @arg date: String ): Unit =
