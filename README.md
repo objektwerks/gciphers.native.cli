@@ -68,10 +68,10 @@ Commands
 Execute
 -------
 0. ```gciphers``` | ```gciphers h```
-1. gciphers t --text text --save
-2. gciphers n --number 1
-3. gciphers d --date 2025-01-01
-4. gciphers nt --number 1
+1. ```gciphers t --text text --save```
+2. ```gciphers n --number 1```
+3. ```gciphers d --date 2025-01-01```
+4. ```gciphers nt --number 1```
 
 Persistence
 -----------
