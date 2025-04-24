@@ -31,11 +31,10 @@ object Date:
     val years = date.getYear().toString.toCharArray.map(c => c.toString)
     months.map(s => s.toInt).sum + days.map(s => s.toInt).sum + years.map(s => s.toInt).sum
 
-  def splitRightYear(date: LocalDate): Encodinng = // mm + dd + yy - last 2 year digits
+  def splitRightYear(date: LocalDate): Encoding = // mm + dd + yy - last 2 year digits
     val month = date.getMonthValue()
     val day = date.getDayOfMonth()
     val rightYear = date.getYear().toString.drop(2)
-    val expression = s"$month + $day + $rightYear"
     month + day + rightYear.toInt
 
   def splitEachMonthDayRightYear(date: LocalDate): Encoding = // m + m + d + d + y + y - last 2 year digits
@@ -43,8 +42,3 @@ object Date:
     val days = date.getDayOfMonth().toString.toCharArray.map(c => c.toString)
     val years = date.getYear().toString.drop(2).toCharArray.map(c => c.toString)
     months.map(s => s.toInt).sum + days.map(s => s.toInt).sum + years.map(s => s.toInt).sum
-
-  private def toExpression(strings: Array[String]): String =
-    if strings.length == 2 then s"${strings(0)} + ${strings(1)}"
-    else if strings.length == 1 then s"${strings(0)}"
-    else "0"
