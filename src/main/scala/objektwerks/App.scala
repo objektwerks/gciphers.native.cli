@@ -70,6 +70,8 @@ object App:
     println(s"date: $date")
 
     val localDate = LocalDate.parse(date)
+
+    // TODO: Use named tuples in Date!
     val splitYear = Date.splitYear(localDate)
     val splitEachYear = Date.splitEachYear(localDate)
     val splitEachMonthDayYear = Date.splitEachMonthDayYear(localDate)
