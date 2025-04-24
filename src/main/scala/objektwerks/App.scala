@@ -14,8 +14,9 @@ object App:
     commands()
 
   @main
-  def t( @arg text: String ): Unit =
+  def t( @arg text: String, @arg save: Boolean = false ): Unit =
     val encodings = Encodings.encode(text)
+    if save then ??? // TODO: Iterate encodings and save nunber with text. Get existing number-text?
     println(s"text: ${encodings.text}")
     println(s"ordinal: ${encodings.ordinal}")
     println(s"reverse ordinal: ${encodings.reverseOrdinal}")
@@ -40,11 +41,6 @@ object App:
     println(s"septenary: ${encodings.septenary}")
     println(s"satanic: ${encodings.satanic}")
     println(s"reverse satanic: ${encodings.reverseSatanic}")
-
-  @main
-  def s( @arg text: String ): Unit =
-    val encodings = Encodings.encode(text)
-    println(encodings) // TODO: Iterate encodings and save nunber with text. Get existing number-text?
 
   @main
   def n( @arg number: Int ): Unit =
