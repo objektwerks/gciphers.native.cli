@@ -15,7 +15,7 @@ object App:
 
   @main
   def t( @arg text: String ): Unit =
-    println(s"text: ${text}")
+    println(s"text: $text")
 
     val encodings = Encodings.encode(text)
     println(s"ordinal: ${encodings.ordinal}")
