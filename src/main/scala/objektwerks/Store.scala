@@ -1,5 +1,7 @@
 package objektwerks
 
+import scala.collection.mutable
+
 import upickle.default.{read => readJson, write => writeJson}
 
 final class Store:
@@ -21,8 +23,13 @@ final class Store:
     val cipherTextsAsJson = writeJson(texts)
     os.write.over(storePath / texts.fileProperty, cipherTextsAsJson)
 
-  def listTextsFileNames(): List[Int] =
-    os.list(storePath)
+  def writeTexts(text: String, numbers: Int*): Unit =
+    val list = os.list(storePath)
       .filter { path => path.baseName.nonEmpty }
       .map { path => path.baseName.toInt }
       .toList
+    for(number <- numbers)
+      if list.contains(number) then
+        val texts = readTexts(s"$number.json")
+        writeTexts( texts.copy(values = texts.values += text) )
+      else writeTexts( Texts(number, mutable.Set(text)) )
