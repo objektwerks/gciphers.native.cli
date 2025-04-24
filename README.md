@@ -60,20 +60,18 @@ Commands
 --------
 >Help is printed with command 0 or an empty command.
 0. h
-1. t --text test
-2. s --text test
-3. n --number 1
-4. d --date 2025-01-01
-5. nt --number 1
+1. t --text test --save
+2. n --number 1
+3. d --date 2025-01-01
+4. nt --number 1
 
 Execute
 -------
 0. gciphers | gciphers h
-1. gciphers t --text text
-2. gciphers s --text text
-3. gciphers n --number 1
-4. gciphers d --date 2025-01-01
-5. gciphers nt --number 1
+1. gciphers t --text text --save
+2. gciphers n --number 1
+3. gciphers d --date 2025-01-01
+4. gciphers nt --number 1
 
 Persistence
 -----------
