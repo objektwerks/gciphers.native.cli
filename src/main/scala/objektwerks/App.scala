@@ -75,5 +75,5 @@ object App:
     println("h")
     println("t --text text --save")
     println("n --number 1")
-    println("d --date 2025-01-01")
     println("nt --number 1")
+    println("d --date 2025-01-01")
