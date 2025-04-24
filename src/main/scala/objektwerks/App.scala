@@ -51,11 +51,6 @@ object App:
     println(s"is triangular: ${stats.isTriangular}")
     println(s"factors: ${stats.factors.mkString(",")}")
 
-  @main 
-  def d( @arg date: String ): Unit =
-    val stats = LocalDate.parse(date) // "2025-01-01"
-    println(stats) // TODO: Pxsrint data stats.
-
   @main
   def nt( @arg number: Int ): Unit =
     val texts = store
@@ -65,6 +60,11 @@ object App:
         case None => Texts.empty
     println(s"number: ${texts.number}")
     println(s"texts: ${texts.values.mkString(",")}")
+
+  @main 
+  def d( @arg date: String ): Unit =
+    val stats = LocalDate.parse(date) // "2025-01-01"
+    println(stats) // TODO: Print date stats.
 
   def main(args: Array[String]): Unit =
     if args.isEmpty then commands()
