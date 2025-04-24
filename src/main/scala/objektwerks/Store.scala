@@ -21,9 +21,8 @@ final class Store:
     val cipherTextsAsJson = writeJson(texts)
     os.write.over(storePath / texts.fileProperty, cipherTextsAsJson)
 
-  def existTexts(number: Int): Boolean =
+  def listTextsFileNames(): List[Int] =
     os.list(storePath)
       .filter { path => path.baseName.nonEmpty }
       .map { path => path.baseName.toInt }
       .toList
-      .contains(number)
