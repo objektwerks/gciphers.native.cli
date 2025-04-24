@@ -43,21 +43,19 @@ object App:
 
   @main
   def n( @arg number: Int ): Unit =
+    println(s"number: $number")
+
     val stats = Number(number, primes, fibonaccis)
-    println(s"number: ${stats.number}")
     println(s"prime rank: ${stats.primeRank}")
     println(s"fibonaci rank: ${stats.fibonacciRank}")
     println(s"is triangular: ${stats.isTriangular}")
     println(s"factors: ${stats.factors.mkString(",")}")
 
-  @main
-  def nt( @arg number: Int ): Unit =
     val texts = store
       .listTexts()
       .find(texts => texts.number == number) match
         case Some(texts) => texts
         case None => Texts.empty
-    println(s"number: ${texts.number}")
     println(s"texts: ${texts.values.mkString(",")}")
 
   @main 
