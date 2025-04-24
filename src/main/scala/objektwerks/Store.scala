@@ -20,8 +20,8 @@ final class Store:
     readJson[Texts](textsAsJson)
 
   def writeTexts(texts: Texts): Unit =
-    val cipherTextsAsJson = writeJson(texts)
-    os.write.over(storePath / texts.fileProperty, cipherTextsAsJson)
+    val textsAsJson = writeJson(texts)
+    os.write.over(storePath / texts.fileProperty, textsAsJson)
 
   def writeTexts(text: String, numbers: Int*): Unit =
     val list = os.list(storePath)
