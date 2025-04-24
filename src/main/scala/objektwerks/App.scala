@@ -48,13 +48,6 @@ object App:
                      encodings.reduction.value,
                      encodings.reverseReduction.value)
 
-    val updatedEncodings = Encodings.encode(text)
-    println(s"updates:")
-    println(s"ordinal: ${updatedEncodings.ordinal}")
-    println(s"reverse ordinal: ${updatedEncodings.reverseOrdinal}")
-    println(s"reduction: ${updatedEncodings.reduction}")
-    println(s"reverse reduction: ${updatedEncodings.reverseReduction}")
-
   @main
   def n( @arg number: Int ): Unit =
     println(s"number: $number")
