@@ -66,11 +66,17 @@ object App:
     println(s"date: $date")
 
     val localDate = LocalDate.parse(date)
-    println(s"mm + dd + yy + yy : ${Date.splitYear(localDate)}")
-    println(s"mm + dd + y + y + y + y : ${Date.splitEachYear(localDate)}")
-    println(s"m + m + d + d + y + y + y + y : ${Date.splitEachMonthDayYear(localDate)}")
-    println(s"mm + dd + yy : ${Date.splitRightYear(localDate)}")
-    println(s"m + m + d + d + y + y : ${Date.splitEachMonthDayRightYear(localDate)}")
+    val splitYear = Date.splitYear(localDate)
+    val splitEachYear = Date.splitEachYear(localDate)
+    val splitEachMonthDayYear = Date.splitEachMonthDayYear(localDate)
+    val splitRightYear = Date.splitRightYear(localDate)
+    val splitEachMonthDayRightYear = Date.splitEachMonthDayRightYear(localDate)
+
+    println(s"${splitYear._1} : ${splitYear._2}")
+    println(s"${splitEachYear._1} : ${splitEachYear._2}")
+    println(s"${splitEachMonthDayYear._1} : ${splitEachMonthDayYear._2}")
+    println(s"${splitRightYear._1} : ${splitRightYear._2}")
+    println(s"${splitEachMonthDayRightYear._1} : ${splitEachMonthDayRightYear._2}")
 
   def main(args: Array[String]): Unit =
     if args.isEmpty then commands()
