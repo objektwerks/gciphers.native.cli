@@ -42,6 +42,8 @@ object App:
     println(s"satanic: ${encodings.satanic}")
     println(s"reverse satanic: ${encodings.reverseSatanic}")
 
+    // TODO: store first 4 ciphers to: n.json
+
   @main
   def n( @arg number: Int ): Unit =
     println(s"number: $number")
