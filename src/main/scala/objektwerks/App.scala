@@ -63,6 +63,7 @@ object App:
     val localDate = LocalDate.parse(date)
     println(s"mm + dd + yy + yy : ${Date.splitYear(localDate)}")
     println(s"mm + dd + y + y + y + y : ${Date.splitEachYear(localDate)}")
+    println(s"m + m + d + d + y + y + y + y : ${Date.splitEachMonthDayYear(localDate)}")
 
   def main(args: Array[String]): Unit =
     if args.isEmpty then commands()
