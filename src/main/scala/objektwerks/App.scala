@@ -72,5 +72,4 @@ object App:
     println("h")
     println("t --text abc")
     println("n --number 1")
-    println("nt --number 1")
     println("d --date 2025-01-01")
