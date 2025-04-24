@@ -61,6 +61,8 @@ object App:
 
   @main 
   def d( @arg date: String ): Unit =
+    println(s"date: $date")
+
     val localDate = LocalDate.parse(date)
     println(s"mm + dd + yy + yy : ${Date.splitYear(localDate)}")
     println(s"mm + dd + y + y + y + y : ${Date.splitEachYear(localDate)}")
