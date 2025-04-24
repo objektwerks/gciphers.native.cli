@@ -62,16 +62,14 @@ Commands
 0. ```h```
 1. ```t --text abc```
 2. ```n --number 1```
-3. ```nt --number 1```
-4. ```d --date 2025-01-01```
+3. ```d --date 2025-01-01```
 
 Execute
 -------
 0. ```gciphers``` | ```gciphers h```
 1. ```gciphers t --text abc```
 2. ```gciphers n --number 1```
-3. ```gciphers nt --number 1```
-4. ```gciphers d --date 2025-01-01```
+3. ```gciphers d --date 2025-01-01```
 
 Persistence
 -----------
