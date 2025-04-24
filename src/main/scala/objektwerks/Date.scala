@@ -4,7 +4,6 @@ import java.time.LocalDate
 import java.time.temporal.ChronoUnit
 
 object Date:
-  type Expression = String
   type Encoding = Int
 
   def dateDiff(fromLocalDate: LocalDate, toLocalDate: LocalDate): Long = ChronoUnit.DAYS.between(fromLocalDate, toLocalDate)
