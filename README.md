@@ -60,14 +60,14 @@ Commands
 --------
 >Help is printed with command 0 or an empty command.
 0. ```h```
-1. ```t --text test --save```
+1. ```t --text test --save``` ```--save``` ***is optional***
 2. ```n --number 1```
 3. ```d --date 2025-01-01```
 4. ```nt --number 1```
 
 Execute
 -------
-0. gciphers | gciphers h
+0. ```gciphers``` | ```gciphers h```
 1. gciphers t --text text --save
 2. gciphers n --number 1
 3. gciphers d --date 2025-01-01
