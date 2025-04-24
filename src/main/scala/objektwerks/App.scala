@@ -14,7 +14,7 @@ object App:
     commands()
 
   @main
-  def t( @arg text: String, @arg save: Boolean = false ): Unit =
+  def t( @arg text: String, @arg save: Boolean ): Unit =
     val encodings = Encodings.encode(text)
     if save then ??? // TODO: Iterate encodings and save nunber with text. Get existing number-text?
     println(s"text: ${encodings.text}")
