@@ -60,8 +60,8 @@ object App:
 
   @main 
   def d( @arg date: String ): Unit =
-    val stats = LocalDate.parse(date) // "2025-01-01"
-    println(stats) // TODO: Print date stats.
+    val localDate = LocalDate.parse(date)
+    println(s"mm + dd + yy + yy : ${Date.splitYear(localDate)}")
 
   def main(args: Array[String]): Unit =
     if args.isEmpty then commands()
