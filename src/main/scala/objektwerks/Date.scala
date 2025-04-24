@@ -25,13 +25,11 @@ object Date:
     val years = date.getYear().toString.toCharArray.map(c => c.toString)
     month + day + years.map(s => s.toInt).sum
 
-  def splitEachMonthDayYear(date: LocalDate): (Expression, Encoding) = // m + m + d + d + y + y + y + y
+  def splitEachMonthDayYear(date: LocalDate): Encoding = // m + m + d + d + y + y + y + y
     val months = date.getMonthValue().toString.toCharArray.map(c => c.toString)
     val days = date.getDayOfMonth().toString.toCharArray.map(c => c.toString)
     val years = date.getYear().toString.toCharArray.map(c => c.toString)
-    val expression = s"${toExpression(months)} + ${toExpression(days)} + ${years(0)} + ${years(1)} + ${years(2)} + ${years(3)}"
-    val encoding = months.map(s => s.toInt).sum + days.map(s => s.toInt).sum + years.map(s => s.toInt).sum
-    (expression, encoding)
+    months.map(s => s.toInt).sum + days.map(s => s.toInt).sum + years.map(s => s.toInt).sum
 
   def splitRightYear(date: LocalDate): (Expression, Encoding) = // mm + dd + yy - last 2 year digits
     val month = date.getMonthValue()
