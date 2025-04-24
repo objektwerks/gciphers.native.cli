@@ -42,7 +42,18 @@ object App:
     println(s"satanic: ${encodings.satanic}")
     println(s"reverse satanic: ${encodings.reverseSatanic}")
 
-    // TODO: store first 4 ciphers to: n.json
+    store.writeTexts(text,
+                     encodings.ordinal.value,
+                     encodings.reverseOrdinal.value,
+                     encodings.reduction.value,
+                     encodings.reverseReduction.value)
+
+    val updatedEncodings = Encodings.encode(text)
+    println(s"updates:")
+    println(s"ordinal: ${updatedEncodings.ordinal}")
+    println(s"reverse ordinal: ${updatedEncodings.reverseOrdinal}")
+    println(s"reduction: ${updatedEncodings.reduction}")
+    println(s"reverse reduction: ${updatedEncodings.reverseReduction}")
 
   @main
   def n( @arg number: Int ): Unit =
