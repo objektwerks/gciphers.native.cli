@@ -9,6 +9,9 @@ object Numbers:
   type Prime = Int
   type Fibonacci = Long
 
+  val primes = Numbers.listPrimes(0 to 1000)
+  val fibonaccis = Numbers.listFibonaccis(0 to 16)
+
   val defaultRankPrime = (0, 0)
   val defaultRankFibonacci = (0, 0)
 

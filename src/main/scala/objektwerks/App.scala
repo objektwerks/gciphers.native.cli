@@ -5,8 +5,6 @@ import mainargs.{main, arg, ParserForMethods}
 import java.time.LocalDate
 
 object App:
-  val primes = Numbers.listPrimes(0 to 1000)
-  val fibonaccis = Numbers.listFibonaccis(0 to 16)
   val store = Store()
 
   @main
@@ -52,7 +50,7 @@ object App:
   def n( @arg number: Int ): Unit =
     println(s"number: $number")
 
-    val stats = Number(number, primes, fibonaccis)
+    val stats = Number(number, Numbers.primes, Numbers.fibonaccis)
     println(s"prime rank: ${stats.primeRank}")
     println(s"fibonaci rank: ${stats.fibonacciRank}")
     println(s"is triangular: ${stats.isTriangular}")
