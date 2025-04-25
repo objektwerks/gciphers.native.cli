@@ -59,10 +59,11 @@ Publish
 Commands
 --------
 >Help is printed with command 0 or an empty command.
-0. ```h```
-1. ```t --text abc```
-2. ```n --number 1```
-3. ```d --date 2025-01-01```
+1. ```h```
+2. ```l```
+3. ```t --text abc```
+4. ```n --number 1```
+5. ```d --date 2025-01-01```
 
 Execute
 -------
