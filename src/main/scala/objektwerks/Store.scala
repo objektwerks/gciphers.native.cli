@@ -1,7 +1,5 @@
 package objektwerks
 
-import scala.collection.mutable
-
 import upickle.default.{read => readJson, write => writeJson}
 
 final class Store:
@@ -31,5 +29,5 @@ final class Store:
     for(number <- numbers)
       if list.contains(number) then
         val texts = readTexts(s"$number.json")
-        writeTexts( texts.copy(values = texts.values += text) )
-      else writeTexts( Texts(number, mutable.Set(text)) )
+        writeTexts( texts.copy(values = texts.values ++ Set(text)) )
+      else writeTexts( Texts(number, Set(text)) )
