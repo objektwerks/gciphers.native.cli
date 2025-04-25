@@ -81,6 +81,12 @@ object App:
     println(s"${splitRightYear.expression} : ${splitRightYear.encoding}")
     println(s"${splitEachMonthDayRightYear.expression} : ${splitEachMonthDayRightYear.encoding}")
 
+  @main
+  def l(): Unit =
+    store.listTexts().foreach { texts =>
+      println(s"${texts.number} : ${texts.values.mkString(",")}")
+    }
+
   def main(args: Array[String]): Unit =
     if args.isEmpty then commands()
     else ParserForMethods(this).runOrExit(args)
