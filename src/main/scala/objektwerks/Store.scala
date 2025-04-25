@@ -29,5 +29,5 @@ final class Store:
     for(number <- numbers)
       if list.contains(number) then
         val texts = readTexts(s"$number.json")
-        writeTexts( texts.copy(values = texts.values ++ Set(text)) )
+        writeTexts( texts.copy(values = texts.values + text) )
       else writeTexts( Texts(number, Set(text)) )
