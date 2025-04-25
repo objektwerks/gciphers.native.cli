@@ -6,7 +6,7 @@ import java.time.LocalDate
 
 object App:
   val primes = Numbers.listPrimes(0 to 1000)
-  val fibonaccis = Numbers.listFibonaccis(0 to 15)
+  val fibonaccis = Numbers.listFibonaccis(0 to 16)
   val store = Store()
 
   @main
