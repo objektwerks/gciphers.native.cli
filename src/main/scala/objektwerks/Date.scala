@@ -4,8 +4,7 @@ import java.time.LocalDate
 import java.time.temporal.ChronoUnit
 
 object Date:
-  type Expression = String
-  type Encoding = Int
+  type DateEncoding = (expression: String, encoding: Int)
 
   def dateDiff(fromLocalDate: LocalDate, toLocalDate: LocalDate): Long = ChronoUnit.DAYS.between(fromLocalDate, toLocalDate)
 
@@ -13,7 +12,7 @@ object Date:
 
   def remainingDaysInYear(date: LocalDate): String = ( date.lengthOfYear() - date.getDayOfYear() ).toString
 
-  def splitYear(date: LocalDate): (Expression, Encoding) = // mm + dd + yy + yy
+  def splitYear(date: LocalDate): DateEncoding = // mm + dd + yy + yy
     val month = date.getMonthValue()
     val day = date.getDayOfMonth()
     val (leftYear, rightYear) = date.getYear().toString.splitAt(2)
@@ -21,7 +20,7 @@ object Date:
     val encoding = month + day + leftYear.toInt + rightYear.toInt
     (expression, encoding)
 
-  def splitEachYear(date: LocalDate): (Expression, Encoding) = // mm + dd + y + y + y + y
+  def splitEachYear(date: LocalDate): DateEncoding = // mm + dd + y + y + y + y
     val month = date.getMonthValue()
     val day = date.getDayOfMonth()
     val years = date.getYear().toString.toCharArray.map(c => c.toString)
@@ -29,7 +28,7 @@ object Date:
     val encoding = month + day + years.map(s => s.toInt).sum
     (expression, encoding)
 
-  def splitEachMonthDayYear(date: LocalDate): (Expression, Encoding) = // m + m + d + d + y + y + y + y
+  def splitEachMonthDayYear(date: LocalDate): DateEncoding = // m + m + d + d + y + y + y + y
     val months = date.getMonthValue().toString.toCharArray.map(c => c.toString)
     val days = date.getDayOfMonth().toString.toCharArray.map(c => c.toString)
     val years = date.getYear().toString.toCharArray.map(c => c.toString)
@@ -37,7 +36,7 @@ object Date:
     val encoding = months.map(s => s.toInt).sum + days.map(s => s.toInt).sum + years.map(s => s.toInt).sum
     (expression, encoding)
 
-  def splitRightYear(date: LocalDate): (Expression, Encoding) = // mm + dd + yy - last 2 year digits
+  def splitRightYear(date: LocalDate): DateEncoding = // mm + dd + yy - last 2 year digits
     val month = date.getMonthValue()
     val day = date.getDayOfMonth()
     val rightYear = date.getYear().toString.drop(2)
@@ -45,7 +44,7 @@ object Date:
     val encoding = month + day + rightYear.toInt
     (expression, encoding)
 
-  def splitEachMonthDayRightYear(date: LocalDate): (Expression, Encoding) = // m + m + d + d + y + y - last 2 year digits
+  def splitEachMonthDayRightYear(date: LocalDate): DateEncoding = // m + m + d + d + y + y - last 2 year digits
     val months = date.getMonthValue().toString.toCharArray.map(c => c.toString)
     val days = date.getDayOfMonth().toString.toCharArray.map(c => c.toString)
     val years = date.getYear().toString.drop(2).toCharArray.map(c => c.toString)

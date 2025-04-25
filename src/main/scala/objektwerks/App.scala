@@ -78,11 +78,11 @@ object App:
     val splitRightYear = Date.splitRightYear(localDate)
     val splitEachMonthDayRightYear = Date.splitEachMonthDayRightYear(localDate)
 
-    println(s"${splitYear._1} : ${splitYear._2}")
-    println(s"${splitEachYear._1} : ${splitEachYear._2}")
-    println(s"${splitEachMonthDayYear._1} : ${splitEachMonthDayYear._2}")
-    println(s"${splitRightYear._1} : ${splitRightYear._2}")
-    println(s"${splitEachMonthDayRightYear._1} : ${splitEachMonthDayRightYear._2}")
+    println(s"${splitYear.expression} : ${splitYear.encoding}")
+    println(s"${splitEachYear.expression} : ${splitEachYear.encoding}")
+    println(s"${splitEachMonthDayYear.expression} : ${splitEachMonthDayYear.encoding}")
+    println(s"${splitRightYear.expression} : ${splitRightYear.encoding}")
+    println(s"${splitEachMonthDayRightYear.expression} : ${splitEachMonthDayRightYear.encoding}")
 
   def main(args: Array[String]): Unit =
     if args.isEmpty then commands()
