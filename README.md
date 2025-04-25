@@ -67,10 +67,11 @@ Commands
 
 Execute
 -------
-0. ```gciphers``` | ```gciphers h```
-1. ```gciphers t --text abc```
-2. ```gciphers n --number 1```
-3. ```gciphers d --date 2025-01-01```
+1. ```gciphers``` | ```gciphers h```
+2. ```gciphers l```
+3. ```gciphers t --text abc```
+4. ```gciphers n --number 1```
+5. ```gciphers d --date 2025-01-01```
 
 Persistence
 -----------
