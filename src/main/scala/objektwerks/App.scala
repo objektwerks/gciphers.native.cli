@@ -94,6 +94,7 @@ object App:
   private def commands(): Unit =
     println("Commands:")
     println("h")
+    println("l")
     println("t --text abc")
     println("n --number 1")
     println("d --date 2025-01-01")
