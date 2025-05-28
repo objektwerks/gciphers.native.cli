@@ -1,6 +1,6 @@
 GCiphers CLI
 ------------
->Analytical command line app for 23 ciphers, using Os-Lib, Ox, uPickle and Scala 3.
+>Analytical command line app for 23 ciphers, using Os-Lib, uPickle and Scala 3.
 
 Ciphers
 -------
