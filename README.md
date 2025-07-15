@@ -2,6 +2,8 @@ GCiphers CLI
 ------------
 >Analytical command line app for 23 ciphers, using Os-Lib, uPickle and Scala 3.
 
+>Also see: [GCiphers](https://github.com/objektwerks/gciphers)
+
 Ciphers
 -------
 1. Ordinal
