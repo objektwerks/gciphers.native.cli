@@ -13,7 +13,7 @@ libraryDependencies ++= {
     "com.lihaoyi" %%% "upickle" % "4.3.2",
     "org.ekrich" %%% "sjavatime" % "1.4.0",
     "com.outr" %%% "scribe" % "3.17.0",
-    "com.outr" %%% "scribe-file" % "3.16.0",
+    "com.outr" %%% "scribe-file" % "3.17.0",
     "org.scalatest" %%% "scalatest" % "3.2.19" % Test
   )
 }
