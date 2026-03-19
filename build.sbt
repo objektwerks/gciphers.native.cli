@@ -5,7 +5,7 @@ enablePlugins(ScalaNativePlugin)
 name := "gciphers.native.cli"
 organization := "objektwerks"
 version := "2.0.0"
-scalaVersion := "3.8.2"
+scalaVersion := "3.8.3-RC2"
 libraryDependencies ++= {
   Seq(
     "com.lihaoyi" %%% "mainargs" % "0.7.6",
